@@ -1,0 +1,84 @@
+
+
+.vscode {
+    padding: 100px;
+    min-height: 100vh;
+    background-color: rgb(30,30,30);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(210, 210, 210);
+    display: flex;
+    flex-direction: column;
+}
+
+.my-text {
+    color: rgb(165, 165, 165);
+    position: relative;
+    width: max-content;
+}
+
+.my-text::before,
+.my-text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.my-text::before {
+    background-color: rgb(30,30,30);
+    animation: typewriter 2100ms steps(23) 1s forwards;
+}
+
+.my-text::after {
+    width: 0.075em;
+    background-color: rgb(184, 184, 184);
+    animation: 
+    typewriter 2100ms steps(23) 1s forwards,
+    blink 750ms steps(23) infinite;
+}
+
+@keyframes typewriter {
+    to {left: 100%;}
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+/* .operator {
+    color: rgb(229, 221, 221);
+} */
+
+.attr-value {
+    color: rgb(185,132,115);
+    
+}
+
+.tag {
+    color: rgb(72, 127, 175);
+    
+}
+
+.attr-name {
+    color: rgb(129, 196, 247);
+    
+}
+
+.punctuation {
+    color: rgb(103, 102, 102);
+}
+
+.landing-page-images {
+    max-width: 900px;
+}
+
+
+
